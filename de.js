@@ -1,5 +1,5 @@
 module.exports = `
-menu.btn.ranked Ranked
+menu.btn.ranked Ranglistenspiel
 menu.btn.shop Markt
 menu.btn.social Soziales
 menu.btn.maps Maps
@@ -91,10 +91,10 @@ settings.local.region Standard Region
 settings.local.lang Sprache
 settings.network.header Netzwerk
 settings.network.netRerouting Auto Routing (Beeinflusst Ping)
-settings.network.netRate Network Rate (Hz)
+settings.network.netRate Netzwerk Rate (Hz)
 settings.network.lagComp Lag Minimierung
 settings.network.optNet Optimierte Verbindung
-settings.network.quickplay Force Quickplay
+settings.network.quickplay Schnelles spiel erzwingen
 settings.popup.header Popups
 settings.experimental.header Experimentell
 settings.experimental.holiday Feiertags-Effekte
@@ -218,7 +218,7 @@ settings.interface.healthNum Nametag Lebens-Nummer
 settings.interface.healthColT Nametag Team-HP-Farbe
 settings.interface.healthColE Nametag Gegner-HP-Farbe
 settings.interface.xpBarCol XP Leisten-Farbe
-settings.interface.xpBarCol2 XP Bar Color 2
+settings.interface.xpBarCol2 XP Bar Farbe 2
 settings.interface.xpBarOpac XP Leisten-Deckkraft
 settings.medals.header Medallien
 settings.medals.show Zeige Medallien
@@ -229,7 +229,7 @@ settings.medals.xOff Medallien X Offset
 settings.medals.yOff Medallien Y Offset
 settings.crosshair.header Fadenkreuz
 settings.crosshair.type Typ
-settings.crosshair.type.1 Dynamic
+settings.crosshair.type.1 Dynamisch
 settings.crosshair.type.2 Benutzerdefiniert
 settings.crosshair.type.3 Mehrschichtig
 settings.crosshair.type.4 Bild
@@ -310,7 +310,7 @@ settings.gameprivacy.partner Zeige Partner Abzeichen
 settings.gameprivacy.rank Zeige Ranked Abzeichen
 settings.gameprivacy.custom Zeige Benutzerdefiniertes Abzeichen
 settings.gameplay.header Spielverlauf
-settings.gameplay.gpSetts Gameplay Settings
+settings.gameplay.gpSetts Gameplay Einstellung
 settings.gameplay.sensitivityX X Empfindlichkeit
 settings.gameplay.sensitivityY Y Empfindlichkeit
 settings.gameplay.aimsensX Zielen X Empfindlichkeit
@@ -374,7 +374,7 @@ settings.viewmodel.zOff Waffen Z Offset
 settings.viewmodel.weapSwapY Waffenwechsel Y
 settings.viewmodel.weapReloadY Waffen-Nachlade Y
 settings.viewmodel.yOffADS Waffen Zielen Y Offset
-settings.viewmodel.adsFovMlt Zielen FOV Power
+settings.viewmodel.adsFovMlt Zielen FOV Stärke
 settings.viewmodel.toggleADS Toggle Weapon ADS
 settings.editing.header Bearbeiten
 settings.editing.health.high HUD HP Hoch
@@ -640,8 +640,8 @@ windows.mods.community.name Mod-Name
 windows.mods.community.none Keine Mods gefunden!
 windows.publish.mod.header Mods veröffentlichen
 windows.publish.mod.thumbnail Keine Vorschauansicht
-windows.publish.mod.name Mods-Name
-windows.publish.mod.paste Mods-Url
+windows.publish.mod.name Mod-Name
+windows.publish.mod.paste Mod-Url
 windows.publish.mod.update Veröffentlichen/Aktualisieren
 windows.publish.mod.login <a>Anmelden</a> um Mods zu erstellen und hochzuladen!
 windows.secondary.header Sekundärwaffe auswählen
@@ -649,12 +649,12 @@ windows.secondary.unlocked Freigeschaltet bei Level {0}
 windows.secondary.customOnly Nur in eigenen Spielen
 windows.secondary.premiumOnly nur mit Premium
 windows.secondary.req Erfordert Level {0}
-windows.skins.unlocked Unlocked
+windows.skins.unlocked Freigeschaltet
 windows.skins.customOnly Customs Only
 windows.skins.premiumOnly Premium Only
 windows.skins.classOnly Req {0}
 windows.skins.req Req lvl {0}
-windows.skins.default Default Skin
+windows.skins.default Standard Skin
 windows.advertise.header Bewerben
 windows.support.header Support
 windows.players.header Spieler Liste
@@ -686,7 +686,7 @@ matchmaker.NoAvailableServers Server sind ausgelastet
 matchmaker.GameIssue Unbekannter Beitrittsfehler
 adblocker Deaktiviere deinen AdBlocker um gratis Krunkies zu erhalten.
 ad-failed Werbung konnte nicht geladen werden. Versuch es noch einmal.
-streamers.views {0} Betrachter
+streamers.views {0} Zuschauer
 streamers.none Keine aktiven Streams!
 error.extentions Deaktiviere Erweiterungen, falls Du welche hast.
 error.seek Klicke und versuche, ein neues Spiel zu finden.
@@ -703,7 +703,7 @@ server.config.tickRI Hohe Tickrate
 server.config.maxPS 40 Spieler Server
 server.config.promServ Server bewerben
 server.config.jumpMlt Sprungkraft
-server.config.airStrf Air Strafing
+server.config.airStrf Luft-Strafing
 server.config.deltaMlt Zeitskala
 server.config.strafeSpd Strafe-Geschwindigkeit
 server.config.fiRat Schuss-Rate
@@ -736,7 +736,7 @@ server.config.bDrop Geschoss-Drop
 server.config.thirdPerson Dritte Person
 server.config.requireCaptcha Benötigt Captcha
 server.config.nameTags Namen ausblenden
-server.config.kCams Kill Cams
+server.config.kCams Abschuss Kamera
 server.config.aAnon Anonymen Modus erlauben
 server.config.noReload Kein Nachladen
 server.config.private Privat
@@ -763,7 +763,7 @@ server.config.fallDmg Fallschaden
 server.config.fallDmgThr Fallschaden-Schwellenwert
 server.config.noDraws Keine Unentschieden
 server.config.bstOfR Der beste aus
-server.config.chrgWeps Chargable Weapons
+server.config.chrgWeps Aufladbare Waffen
 social.login Anmelden/Registrieren
 social.login.failed Anmeldung fehlgeschlagen
 social.login.buy Zum Kaufen anmelden
@@ -774,7 +774,7 @@ social.since Seit
 social.user.maps Benutzer Maps
 social.user.mods Benutzer Mods
 social.maps.none Keine Maps gefunden...
-social.mods.none Keine Mods found...
+social.mods.none Keine Mods gefunden...
 social.market.price.low Niedrigster Preis
 social.market.price.list Preis anzeigen in
 social.market.searching Suchen
@@ -811,7 +811,7 @@ social.market.gift.amount Geschenkbetrag in
 social.market.fee.gift Keine Gebühr
 social.market.gift KR verschenken
 social.market.gift.msg Hinterlasse eine Nachricht
-respawn.auto Automatischer Respawn in {0}
+respawn.auto Automatischer Wiedereinstieg in {0}
 custom.host.ranked Im Ranked Modus kannst du kein Spiel hosten
 funds.insufficient Zu wenig Krunkies
 funds.out Sieht aus als hättest du keine Krunkies mehr.
@@ -828,8 +828,8 @@ account.login.required Du musst eingeloggt sein
 account.banned.hack Dieser Account wurde für Hacking gebannt
 account.banned.appeal Um einen Entbannungsantrag zu stellen kontaktiere:
 account.delete Du kannst die Löschung deines Accounts hier beantragen, wird die Anforderung nicht innerhalb von 14 Tagen zurückgezogen wird der Account und alle Daten permanent gelöscht.
-account.delete.request Bist du dir sicher dass du eine Accountlöschung beantragen möchtest?
-account.delete.cancel Bist du dir sicher das du die Beantragung zur Accountlöschung zurückziehen möchtest?
+account.delete.request Bist du dir sicher, dass du eine Accountlöschung beantragen möchtest?
+account.delete.cancel Bist du dir sicher, dass du die Beantragung zur Accountlöschung zurückziehen möchtest?
 spin.free.available GRATIS KR VERFÜGBAR!
 spin.free.claim Du kannst dieses Glücksrad jede Stunde nach absolvieren eines Spiels einlösen.
 spin.free.disable Diese Popups können in den generellen Einstellungen ausgeschalten werden.
@@ -920,12 +920,12 @@ chall.name.dmg {0} Schaden zufügen {1}
 chall.name.bzk Erziele {0} Spielverderber-Abschüsse {1}
 chall.name.cc Erziele {0} hauchnahe Abschüsse {1}
 chall.name.rk Erziele {0} Vergeltungs-Abschüsse {1}
-event.doubleXP 2x Klassen XP in diesem Spiel aktiv
+event.doubleXP 2x Klassen XP ist in diesem Spiel aktiv
 ranked.join Ranked Spiel beigetreten. Das Verlassen eines Ranked Spiels wird mit einem temporären Bann bestraft
 ranked.progress Spiel in Gange
 ranked.team Tritt einem Team bei
 ranked.switch Du kannst während der Runde deine Klasse nicht wechseln
-ranked.spectate Zuschauen ist im Ranked Modus nicht gestattet
+ranked.spectate Zuschauen ist im Ranked Modus nicht möglich
 ranked.login Melde dich an um zu spawnen
 ranked.sync Sync Daten fehlen
 ranked.team.spawn Bitte tritt einem Team bei um zu spawnen
